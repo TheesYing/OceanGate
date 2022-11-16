@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,72 @@
     <title>Document</title>
     <script src="angular.min.js"></script>
     <style>
-        div{
+        div {
             text-align: center;
             size: 20px;
         }
-        #b input{
+
+        #b input {
             border: 12px;
             background-color: red;
             color: aliceblue;
 
         }
+
+        body {
+            background-color: rgb(207, 227, 115);
+        }
+
+        .tieude {
+            text-align: center;
+            color: red;
+        }
+
+        .boder {
+            border-style: solid;
+            padding: 20px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
     </style>
 </head>
-<body ng-app> 
-    <div>
-        <h2>
-            login
+
+<body ng-app>
+        <h2 class="tieude">
+            Login
         </h2>
-    <div>
-        <form name="myform">
+        <br>
+        <div class="boder">
             <div>
-    <input type="text" name="name" ng-model="username" ng-Minlength=8 required placeholder=" username">
-    <div class="error" ng-show="myform.name.$dirty">
-        <p ng-show="myform.name.$error.required">
-            required!
-        </p>
-        <p ng-show="myform.name.$error.minlength">
-            min-lenght is 8!
-        </p>
-    </div>
-</div >
-<div>
-    <input type="password" name="pass1" ng-model="password1" ng-Minlength=8 required placeholder=" password">
-    <div class="error" ng-show="myform.pass1.$dirty">
-<p ng-show="myform.pass1.$error.required">required!</p>
-<p ng-show="myform.pass1.$error.minlength">minlenght is 8!</p>
-    </div>
-</div>
-<div id="b">
-    <input type="submit" value="log in now" >
-</div>
-        </form>
-    </div>
+                <form name="myform">
+                    <div>
+                        Username: <input type="text" name="name" ng-model="username" ng-Minlength=8 required
+                            placeholder="Username">
+                        <div class="error" ng-show="myform.name.$dirty">
+                            <p ng-show="myform.name.$error.required">
+                                required!
+                            </p>
+                            <p ng-show="myform.name.$error.minlength">
+                                min-lenght is 8!
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        Password: <input type="password" name="pass1" ng-model="password1" ng-Minlength=8 required
+                            placeholder="Password">
+                        <div class="error" ng-show="myform.pass1.$dirty">
+                            <p ng-show="myform.pass1.$error.required">required!</p>
+                            <p ng-show="myform.pass1.$error.minlength">minlenght is 8!</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="b">
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
 </body>
+
 </html>
