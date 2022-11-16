@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <style>
+        div {
+            text-align: center;
+            size: 20px;
+        }
+
+        #a input {
+            border: 12px;
+            background-color: red;
+            color: aliceblue;
+
+        }
+        body {
+            background-color: rgb(207, 227, 115);
+        }
+        .tieude {
+            text-align: center;
+            color: red;
+        }
+
+        .boder {
+            border-style: solid;
+            padding: 20px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+    </style>
+</head>
+<body ng-app>
+    <h2 class="tieude">
+        Sign in
+    </h2>
+    <br>
+    <div class="boder">
+        <div>
+            <form name="myform">
+                <div>
+                    Username: <input type="text" name="name" ng-model="username" ng-Minlength=8 required
+                        placeholder="Username">
+                    <div class="error" ng-show="myform.name.$dirty">
+                        <p ng-show="myform.name.$error.required">
+                            required!
+                        </p>
+                        <p ng-show="myform.name.$error.minlength">
+                            min-lenght is 8!
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    Passwork: <input type="password" name="pass1" ng-model="password1" ng-Minlength=8 required
+                        placeholder=" Password">
+                    <div class="error" ng-show="myform.pass1.$dirty">
+                        <p ng-show="myform.pass1.$error.required">required!</p>
+                        <p ng-show="myform.pass1.$error.minlength">minlenght is 8!</p>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    Conform Passwork: <input type="password" name="pass2" ng-model="password2" required
+                        placeholder="Conform Passwork">
+                    <div class="error" ng-show="myform.pass2.$dirty">
+                        <p ng-show="myform.pass2.$error.required">equired!</p>
+                    </div>
+                </div>
+                <br>
+                <div id="a">
+                    <input type="submit" value="Register now" ng-click="up()" ng-disabled="myform.$invalid">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        var app = angular.module("myapp", []);
+    </script>
+</body>
+</html>
