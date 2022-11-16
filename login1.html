@@ -11,13 +11,23 @@
             text-align: center;
             size: 20px;
         }
+        #b input{
+            border: 12px;
+            background-color: red;
+            color: aliceblue;
+
+        }
     </style>
 </head>
 <body ng-app> 
     <div>
+        <h2>
+            login
+        </h2>
+    <div>
         <form name="myform">
             <div>
-    username: <input type="text" name="name" ng-model="username" ng-Minlength=8 required>
+    <input type="text" name="name" ng-model="username" ng-Minlength=8 required placeholder=" username">
     <div class="error" ng-show="myform.name.$dirty">
         <p ng-show="myform.name.$error.required">
             required!
@@ -28,15 +38,15 @@
     </div>
 </div >
 <div>
-    password: <input type="password" name="pass1" ng-model="password1" ng-Minlength=8 required>
+    <input type="password" name="pass1" ng-model="password1" ng-Minlength=8 required placeholder=" password">
     <div class="error" ng-show="myform.pass1.$dirty">
 <p ng-show="myform.pass1.$error.required">required!</p>
 <p ng-show="myform.pass1.$error.minlength">minlenght is 8!</p>
     </div>
 </div>
-<di>
-    <input type="submit" value="submit" >
-</di>
+<div id="b">
+    <input type="submit" value="log in now" >
+</div>
         </form>
     </div>
 </body>

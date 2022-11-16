@@ -11,13 +11,24 @@
             text-align: center;
             size: 20px;
         }
+        #a input{
+            border: 12px;
+            background-color: red;
+            color: aliceblue;
+
+        }
     </style>
 </head>
 <body ng-app> 
     <div>
+        <h2>
+            register
+        </h2>
+    </div>
+    <div>
         <form name="myform">
             <div>
-    username: <input type="text" name="name" ng-model="username" ng-Minlength=8 required>
+     <input type="text" name="name" ng-model="username" ng-Minlength=8 required placeholder="username">
     <div class="error" ng-show="myform.name.$dirty">
         <p ng-show="myform.name.$error.required">
             required!
@@ -28,22 +39,22 @@
     </div>
 </div >
 <div>
-    password: <input type="password" name="pass1" ng-model="password1" ng-Minlength=8 required>
+    <input type="password" name="pass1" ng-model="password1" ng-Minlength=8 required placeholder=" password">
     <div class="error" ng-show="myform.pass1.$dirty">
 <p ng-show="myform.pass1.$error.required">required!</p>
 <p ng-show="myform.pass1.$error.minlength">minlenght is 8!</p>
     </div>
 </div>
 <div>
-    final mark:<input type="password" name="pass2" ng-model="password2"  required>
+    <input type="password" name="pass2" ng-model="password2"  required placeholder="final mark">
     <div class="error" ng-show="myform.pass2.$dirty">
         <p ng-show="myform.pass2.$error.required">equired!</p>
     </div>
 </div>
-<di>
-    <input type="submit" value="submit" ng-click="up()"
+<div id="a">
+    <input type="submit" value="Register now" ng-click="up()"
     ng-disabled="myform.$invalid">
-</di>
+</div>
         </form>
     </div>
     <script>
