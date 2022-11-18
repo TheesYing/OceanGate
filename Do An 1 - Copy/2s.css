@@ -266,7 +266,7 @@
   }
   
   .footer-item .img-footer img {
-    width: 100%;
+  width: 50%;
   }
   
   .footer-item .social-footer {
@@ -287,7 +287,7 @@
   /* footer */
 .footer-item {
     padding: .5rem 2rem;
-    background: #796fd4;
+    background: hsl(239, 53%, 70%);
     display: flex;
   
   }
@@ -314,7 +314,7 @@
   }
   
   .footer-item .social-footer li:last-child {
-    margin-left: .5rem;
+    margin-left: 5rem;
   }
   .img-prd{
     width: 180px;
