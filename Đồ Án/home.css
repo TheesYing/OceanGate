@@ -59,3 +59,11 @@ table {
 	padding: 30px;
 	font-size: 30px;
 }
+footer table tr th{
+	padding: 10px;
+	
+}
+
+footer table tr td{
+	padding: 10px;
+} 
