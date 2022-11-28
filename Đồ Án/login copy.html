@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+    <title>OceanGate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    div {
+        text-align: center;
+        size: 20px;
+    }
+
+    #b input {
+        border: 12px;
+        background-color: #600fe4;
+        color: aliceblue;
+
+    }
+
+    body {
+        background-color:#eaf4f4;
+    }
+
+    .tieude {
+        text-align: center;
+        color:#2717c0;
+    }
+
+    .boder {
+        border-style: solid;
+        padding: 20px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+</style>
+<body>
+    <!--header-->
+    <div style="text-align: center;">
+        <a href="home.html"><img style="height:140px; width: auto;" src="img/logo.png" alt=""></a>
+    </div>
+    <div>
+        <div>
+            <table class="nav">
+                <tr>
+                    <td><a href="product.html">Product</a></td>
+                    <td><a href="aboutus.html">About Us</a></td>
+                    <td><a href="contact.html">Contact</a></td>
+                    <td><a href="login.html">Login</a>|<a href="signin.html">Sign in</a></td>
+                    <td>
+                        <div class="wrap">
+                            <form action="" class="search" method="post">
+                                <input type="text" class="searchTerm" placeholder="Search?">
+                                <button type="submit" class="searchButton">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div></div>
+    </div>
+        
+    
+        <br>
+        <div class="boder">
+            <div>
+                <form name="myform">
+                    <div>
+                        Username: <input type="text" name="name" ng-model="username" ng-Minlength=8 required
+                            placeholder="Username">
+                        <div class="error" ng-show="myform.name.$dirty">
+                            <p ng-show="myform.name.$error.required">
+                                required!
+                            </p>
+                            <p ng-show="myform.name.$error.minlength">
+                                min-lenght is 8!
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        Password: <input type="password" name="pass1" ng-model="password1" ng-Minlength=8 required
+                            placeholder="Password">
+                        <div class="error" ng-show="myform.pass1.$dirty">
+                            <p ng-show="myform.pass1.$error.required">required!</p>
+                            <p ng-show="myform.pass1.$error.minlength">minlenght is 8!</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="b">
+                        <a href="home.html"><input type="submit" value="Login"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>2
+
+</html>
