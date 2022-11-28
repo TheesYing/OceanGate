@@ -72,3 +72,7 @@ footer{
 a:link{
 	text-decoration: none;
 }
+.body1 div table tr td {
+	padding: 20px;
+	margin: 20px;
+}
