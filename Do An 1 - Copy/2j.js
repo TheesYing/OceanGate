@@ -19,30 +19,3 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
-<style>
-        div {
-            text-align: center;
-            size: 20px;
-        }
-
-        #a input {
-            border: 12px;
-            background-color:#190d84;
-            color: aliceblue;
-
-        }
-        body {
-            background-color: #fbfdff;
-        }
-        .tieude {
-            text-align: center;
-            color: #190d84;
-        }
-
-        .boder {
-            border-style: solid;
-            padding: 20px;
-            margin-left: 200px;
-            margin-right: 200px;
-        }
-    </style>
