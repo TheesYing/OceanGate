@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reponsive.css" />
     <link rel="stylesheet" href="2s.css" />
+    <link rel="stylesheet" href="home.css">
     <!-- CSS only -->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -30,66 +31,32 @@
 
 <body >
     <!-- header -->
-    <header>
-        <nav >
-            <div class="img-nav">
-                <h1><b>OceanGate</b></h1>
-            </div>
-            <div class="content-nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li>
-                        <p class="login"><a href="login.html">Log in</a> | <a href="creat.html">Sign in</a></p>
-                    </li>
-                </ul>
-                <form>
-                    <input type="text" name="search" placeholder="Search product..." />
-                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                    
-                </form>
-                
-                <button id="cart">
-                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                    Cart
-                </button>
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Cart</h5>
-                            <span class="close">&times;</span>
+    <div style="text-align: center;">
+        <a href="home.html"><img style="height:140px; width: auto;" src="img/logo.png" alt=""></a>
+    </div>
+    <div>
+        <div>
+            <table class="nav">
+                <tr>
+                    <td><a href="product.html">Product</a></td>
+                    <td><a href="aboutus.html">About Us</a></td>
+                    <td><a href="contact.html">Contact</a></td>
+                    <td><a href="login.html">Login</a>|<a href="signin.html">Sign in</a></td>
+                    <td>
+                        <div class="wrap">
+                            <form action="" class="search" method="post">
+                                <input type="text" class="searchTerm" placeholder="Search?">
+                                <button type="submit" class="searchButton">
+                                    Submit
+                                </button>
+                            </form>
                         </div>
-                        <div class="modal-body">
-                            <div class="cart-row">
-                                <span class="cart-item cart-header cart-column">Product :</span>
-                                <br>
-                                <span class="cart-price cart-header cart-column">Price :</span>
-                                <br>
-                                <span class="cart-quantity cart-header cart-column">Amount :</span>
-                            </div>
-                            <div class="cart-items">
-    
-                            </div>
-                            <div class="cart-total">
-                                <strong class="cart-total-title">Total :</strong>
-                                <span class="cart-total-price">0VNĐ</span>
-                            </div>
-                        </div>
-    
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary close-footer">Close</button>
-                            <button type="button" class="btn btn-primary order">Pay</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-       
-           
-        </nav>
-
-    </header>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div></div>
+    </div>
     <br>
     
     <br>
@@ -103,7 +70,7 @@
                     <div class="img-product">
                         <img class="img-prd" src="doanx2/pic1.webp" alt=""> 
                     </div>
-                    <div class="content-product">f
+                    <div class="content-product">
                         <h3 class="content-product-h3">Cong (BOXSET) - Tóc Tiên</h3>
                         <div class="content-product-deltals">
                             <div class="price">
@@ -360,22 +327,58 @@
     
     <!-- footer -->
     <footer>
-        <div class="footer-item">
-            <div class="img-footer">
-                <h1><b>OceanGate</b></h1>
+        <div class="container">
+            <!--Bắt Đầu Nội Dung Giới Thiệu-->
+            <div class="noi-dung about">
+                <h2>Về Chúng Tôi</h2>
+                <p>Lorem ipsumdolor sit...</p>
+                <ul class="social-icon">
+                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                </ul>
             </div>
-            
-            <div class="social-footer">
-                <li><a target="_blank" href="">
-                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                    </a></li>
-                <li><a target="_blank" href="">
-                        <i class="fa fa-github-square" aria-hidden="true"></i>
-                    </a></li>
-                <li><a target="_blank" href="">
-                        <i class="fa fa-youtube-square" aria-hidden="true"></i>
-                    </a></li>
+            <!--Kết Thúc Nội Dung Giới Thiệu-->
+            <!--Bắt Đầu Nội Dung Đường Dẫn-->
+            <div class="noi-dung links">
+                <h2>Đường Dẫn</h2>
+                <ul>
+                    <li><a href="home.html">Trang Chủ</a></li>
+                    <li><a href="aboutus.html">Về Chúng Tôi</a></li>
+                    <li><a href="contact.html">Thông Tin Liên Lạc</a></li>
+                </ul>
             </div>
+            <!--Kết Thúc Nội Dung Đường Dẫn-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+            <div class="noi-dung contact">
+                <h2>Thông Tin Liên Hệ</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>Đường Số 1<br />
+                            Quận 1, Thành Phố Hồ Chí Minh<br />
+                            Việt Nam</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="#">+84 123 456 789</a>
+                            <br />
+                            <a href="#">+84 987 654 321</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="#">diachiemail@gmail.com</a></p>
+                   </li>
+                    <li>
+                        <form class="form">
+                            <input type="email" class="form__field" placeholder="Đăng Ký Subscribe Email" />
+                            <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
         </div>
     </footer>
     <script>
