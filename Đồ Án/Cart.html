@@ -15,41 +15,40 @@
         
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+        <link rel="stylesheet" href="home.css">
+        <script src="home.js"></script>
 </head>
 <body>
-    <nav >
-        <div class="img-nav">
-            <h1><b>OceanGate</b></h1>
-        </div>
-        <div class="content-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About Us</a></li>
-                <li>
-                    <p class="login"><a href="login.html">Log in</a> | <a href="creat.html">Sign in</a></p>
-                </li>
-            </ul>
-            <form>
-                <input type="text" name="search" placeholder="Search product..." />
-                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                
-            </form>
-            
-           
-            </div>
-        </div>
-   
-       
-    </nav>
+   <!--header-->
+   <div style="text-align: center;">
+    <a href="home.html"><img style="height:140px; width: auto;" src="img/logo.png" alt=""></a>
+</div>
+<div>
+    <div>
+        <table class="nav">
+            <tr>
+                <td><a href="product.html">Product</a></td>
+                <td><a href="aboutus.html">About Us</a></td>
+                <td><a href="contact.html">Contact</a></td>
+                <td><a href="login.html">Login</a>|<a href="signin.html">Sign in</a></td>
+                <td>
+                    <div class="wrap">
+                        <form action="" class="search" method="post">
+                            <input type="text" class="searchTerm" placeholder="Search?">
+                            <button type="submit" class="searchButton">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-</header>
+
    
 
-<section class="wrapper">
-    <div class="products">
+
 <!-- Main -->
 <div class="container">
     <div class="row">
@@ -62,11 +61,62 @@
     <a href="#" data-name="Cong(BOXSET)-TócTiên" data-price="30.2" class="add-to-cart btn btn-primary">Add to cart</a>
   </div>
 </div>
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="doanx2/pic1.webp" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">QUÂNA.P-ĐÁPÁNCUỐICÙNG</h4>
+    <p class="card-text">Price: $30.2</p>
+    <a href="#" data-name="Cong(BOXSET)-TócTiên" data-price="30.2" class="add-to-cart btn btn-primary">Add to cart</a>
+  </div>
+</div>
       </div>
-     
-   
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="doanx2/pic1.webp" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Cong(BOXSET)-TócTiên</h4>
+          <p class="card-text">Price: $30.2</p>
+          <a href="#" data-name="Cong(BOXSET)-TócTiên" data-price="30.2" class="add-to-cart btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="doanx2/pic1.webp" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Cong(BOXSET)-TócTiên</h4>
+          <p class="card-text">Price: $30.2</p>
+          <a href="#" data-name="Cong(BOXSET)-TócTiên" data-price="30.2" class="add-to-cart btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="doanx2/pic1.webp" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Cong(BOXSET)-TócTiên</h4>
+          <p class="card-text">Price: $30.2</p>
+          <a href="#" data-name="Cong(BOXSET)-TócTiên" data-price="30.2" class="add-to-cart btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="doanx2/pic1.webp" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Cong(BOXSET)-TócTiên</h4>
+          <p class="card-text">Price: $30.2</p>
+          <a href="#" data-name="Cong(BOXSET)-TócTiên" data-price="30.2" class="add-to-cart btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="doanx2/pic1.webp" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Cong(BOXSET)-TócTiên</h4>
+          <p class="card-text">Price: $30.2</p>
+          <a href="#" data-name="Cong(BOXSET)-TócTiên" data-price="30.2" class="add-to-cart btn btn-primary">Add to cart</a>
+        </div>
+      </div>
     </div>
 </div>
+
+
+
+
+
 </div></section>
   
  <!-- Modal -->
@@ -95,20 +145,15 @@
  <!-- Nav -->
  <div class="row">
     <div class="col">
-     <nav>
-        <div class="content-nav">
+     
             
             
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button>
+                </div>
             </div>
-           
-            </div>
-        </div>
-   
-       
-    </nav>
+     
 
-</nav>
+
 </body>
 <script>
     // ************************************************
