@@ -25,6 +25,7 @@ body {
 	padding: 40px 0;
 	position: relative;
 	margin: 0;
+	color: rgb(43, 30, 79);
 }
 
 a {
@@ -50,7 +51,7 @@ a:hover {
 	background: #fff;
 	padding-right: 150px;
 	position: absolute;
-	left: 217px;
+	left: 180px;
 
 	-webkit-transition: all .2s linear;
 	-moz-transition: all .2s linear;
@@ -60,7 +61,7 @@ a:hover {
 }
 
 #site-header h1:hover span.last-span, #site-header h1 span.is-open {
-	left: 363px;
+	left: 336px;
 }
 
 #site-header h1 em {
