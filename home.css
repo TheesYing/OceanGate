@@ -60,8 +60,9 @@ table {
 	font-size: 30px;
 }
 
-a:link {
+.nav tr td a:link{
 	text-decoration: none;
+	
 }
 
 .body1 div table tr td {

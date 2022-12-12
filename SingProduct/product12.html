@@ -14,6 +14,53 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="singleproduct.css">
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            margin: 10%;
+            text-align: center;
+        }
+
+        .btn-hover {
+            width: 200px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px;
+            height: 55px;
+            text-align: center;
+            border: none;
+            background-size: 300% 100%;
+
+            border-radius: 50px;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+        .btn-hover:hover {
+            background-position: 100% 0;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+        .btn-hover:focus {
+            outline: none;
+        }
+
+        .btn-hover.color-1 {
+            background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+            box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+        }
+    </style>
 </head>
 
 <body>
@@ -43,67 +90,30 @@
             </table>
         </div>
     </div>
-    <div style="text-align: center; background-color: bisque;">
-        <img src="../img/pic12.webp" alt=""> <br>
-        HOÀNG THÙY LINH - HOÀNG (BOX SET) -
-        980,000đ <br>
-        CD (Digipakk) <br>
-        Hardcover Photobook <br>
-        Exclusive Poster <br>
-        Random Poster (1/2) <br>
-        2 Random Collectable Art Cards (2/4) <br>
-        Handwrittten Note from Hoàng Thùy Linh <br>
+    <div class="singleproduct">
+        <table>
+            <tr>
+                <td rowspan="2"><img width="450px" src="../img/pic12.webp" alt=""></td>
+                <td><span style="font-size: 25px;">HOÀNG THÙY LINH - HOÀNG (BOX SET)</span><br>
+                    <div style="font-size: 15px;">
+                        CD (Digipakk) <br>
+                        Hardcover Photobook <br>
+                        Exclusive Poster <br>
+                        Random Poster (1/2) <br>
+                        2 Random Collectable Art Cards (2/4) <br>
+                        Handwrittten Note from Hoàng Thùy Linh <br>
+                        <span style="font-size: 25px;">980$</span>
+                </td>
     </div>
-    <footer>
-        <div class="container">
-            <div class="noi-dung about">
-                <h2>About Us</h2>
-                <p>Lorem ipsumdolor sit...</p>
-                <ul class="social-icon">
-                    <li><a href="https://www.facebook.com/hangdiathoidai/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
-                </ul>
-            </div>
-            <div class="noi-dung links">
-                <h2>Link</h2>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../aboutus.html">About US</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="noi-dung contact">
-                <h2>Contact</h2>
-                <ul class="info">
-                    <li>
-                        <span><i class="fa fa-map-marker"></i></span>
-                        <span>1st Street<br />
-                            District 1, Ho Chi Minh City<br />
-                            Vietnam</span>
-                    </li>
-                    <li>
-                        <span><i class="fa fa-phone"></i></span>
-                        <p><a href="#">+84 123 456 789</a>
-                            <br />
-                            <a href="#">+84 987 654 321</a>
-                        </p>
-                    </li>
-                    <li>
-                        <span><i class="fa fa-envelope"></i></span>
-                        <p><a href="#">diachiemail@gmail.com</a></p>
-                    </li>
-                    <li>
-                        <form class="form">
-                            <input type="email" class="form__field" placeholder="Sign In Subscribe Email" />
-                            <button type="button" class="btn btn--primary  uppercase">To Send</button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+
+    </tr>
+    <tr>
+        <td>
+            <div class="buttons"><a href="#"><button class="btn-hover color-1">Buy Now</button></a></div>
+        </td>
+    </tr>
+    </table>
+    </div>
 </body>
 
 </html>
