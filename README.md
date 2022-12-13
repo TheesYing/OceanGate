@@ -4,7 +4,6 @@ eProject-2022 Batch no: T1.2208.A2
 Project title: OceanGate
 
 ========> Group 01 <=========
-
 4 collaborators:
 
 Student1409151  PHAN THẾ VINH	
