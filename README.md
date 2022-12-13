@@ -13,7 +13,6 @@ Student1409683  TRẦN RA XIN
 
 Student1409676  TRẦN THÀNH ĐẠT
 
-Student1409668  NGUYỄN VĂN NINH
 ============================
 
 eProject documentation at https://github.com/TheesYing/OceanGate/tree/main/Document
