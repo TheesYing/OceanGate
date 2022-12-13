@@ -5,7 +5,7 @@ Project title: OceanGate
 
 ========> Group 01 <=========
 
-4 collaborators:
+3 collaborators:
 
 Student1409151  PHAN THẾ VINH	
 
